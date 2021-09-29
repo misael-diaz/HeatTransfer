@@ -23,8 +23,7 @@ References:
     and Mass Transfer, 8th edition.
 """
 
-import math
-pi = math.pi
+from numpy import pi
 
 """
 length,           meters,         m
