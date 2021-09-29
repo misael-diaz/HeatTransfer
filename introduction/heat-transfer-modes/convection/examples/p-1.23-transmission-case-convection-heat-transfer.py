@@ -1,13 +1,14 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Heat Transfer I                                                 March 23, 2020
-ME 3150 SP20  
+Heat Transfer I                                              March 23, 2020
+ME 3150 SP20
 Prof. M. Diaz-Maldonado
 
 Synopsis:
 Problem 1.23. Heat removal from a transmission case by forced convection.
 
-Incroprera et al. Fundamentals of Heat and Mass Transfer, 7th edition. 
+Incroprera et al. Fundamentals of Heat and Mass Transfer, 7th edition.
 Physical quantities are expressed in SI Units.
 """
 
@@ -25,7 +26,7 @@ generated thermal energy, Watts,         W
 """
 P   = 150.0
 eta = 0.93
-Eg  = P * (1 - eta) * 0.7457e3; # constant converts hp to W  
+Eg  = P * (1 - eta) * 0.7457e3; # constant converts hp to W
 
 """
 heat transfer coefficient,             W / m^2 K
