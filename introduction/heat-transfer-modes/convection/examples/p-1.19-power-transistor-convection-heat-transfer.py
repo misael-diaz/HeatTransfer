@@ -49,7 +49,8 @@ generated thermal energy, Watts,         W
 """
 Eg = h * A * (T_s - T_inf)
 
-print("")
-print("Answers:")
-print("max allowed power: %e W" %(Eg))
-print("")
+ans = (
+    f"\n\nSolution:\n"
+    f"max allowed power: {Eg} W\n\n"
+)
+print(ans)
