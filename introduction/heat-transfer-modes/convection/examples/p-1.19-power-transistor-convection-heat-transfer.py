@@ -54,6 +54,6 @@ ans = (
     f"\n\nProblem 1.27 (1.19 6th-ed):\n"
     f"Heat transfer from a power transistor by forced convection\n\n"
     f"Solution:\n"
-    f"max allowed power: {Eg} W\n\n"
+    f"max allowed power: {Eg:6.2f} W\n\n"
 )
 print(ans)
