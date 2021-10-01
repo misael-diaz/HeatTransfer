@@ -6,7 +6,7 @@ ME 3150 SP20
 Prof. M. Diaz-Maldonado
 
 Synopsis:
-Problem 1.27 (8th edition).
+Problem 1.19 (1.27 8th edition).
 Heat removal from a power transistor by forced convection.
 Physical quantities are expressed in SI Units.
 
@@ -51,7 +51,7 @@ generated thermal energy, Watts,         W
 Eg = h * A * (T_s - T_inf)
 
 ans = (
-    f"\n\nProblem 1.27 (1.19 6th-ed):\n"
+    f"\n\nProblem 1.19 (1.27 8th-ed):\n"
     f"Heat transfer from a power transistor by forced convection\n\n"
     f"Solution:\n"
     f"max allowed power: {Eg:6.2f} W\n\n"
