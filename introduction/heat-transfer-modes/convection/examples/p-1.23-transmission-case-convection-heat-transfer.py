@@ -6,7 +6,8 @@ ME 3150 SP20
 Prof. M. Diaz-Maldonado
 
 Synopsis:
-Problem 1.23. Heat removal from a transmission case by forced convection.
+Problem 1.23 (6th edition).
+Heat removal from a transmission case by forced convection.
 Physical quantities are expressed in SI Units.
 
 
@@ -53,7 +54,8 @@ transmission temperature, Centigrades, C
 T_s = Eg / (h * A) + T_inf
 
 ans = (
-    f"\n\nSolution:\n"
+    f"\n\nProblem 1.23 (6th edition): Forced Convection\n"
+    f"Solution:\n"
     f"surface temperature of transmission: {T_s:6.2f} centigrades\n\n"
 )
 print(ans)
