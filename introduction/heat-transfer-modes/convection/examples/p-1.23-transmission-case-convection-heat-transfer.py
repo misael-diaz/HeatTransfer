@@ -24,24 +24,24 @@ References:
 """
 
 """
-length,   meters,         m
-total surface area (cube),     meters squared, m^2
+length,                     meters,         m
+total surface area (cube),  meters squared, m^2
 """
 W = 0.3
 A = 6 * W * W
 
 """
-power input,              horsepower,    hp
-transmission efficiency,  dimensionless, 1
-generated thermal energy, Watts,         W
+power input,                horsepower,     hp
+transmission efficiency,    dimensionless,  1
+generated thermal energy,   Watts,          W
 """
 P   = 150.0
 eta = 0.93
 Eg  = P * (1 - eta) * 0.7457e3; # constant converts hp to W
 
 """
-heat transfer coefficient,             W / m^2 K
-ambient temperature,      Centigrades, C
+heat transfer coefficient,                  W / (m^2 K)
+ambient temperature,        Centigrades,    C
 """
 h     = 200.0
 T_inf = 30.0
@@ -50,7 +50,7 @@ T_inf = 30.0
 solution:
 transmission temperature, Centigrades, C
 """
-T_s = Eg / (h * A) + T_inf 
+T_s = Eg / (h * A) + T_inf
 
 print("")
 print("Answers:")
