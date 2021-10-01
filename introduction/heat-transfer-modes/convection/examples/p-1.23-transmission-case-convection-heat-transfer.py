@@ -52,7 +52,8 @@ transmission temperature, Centigrades, C
 """
 T_s = Eg / (h * A) + T_inf
 
-print("")
-print("Answers:")
-print("surface temperature of transmission: %6.2f centigrades" %(T_s))
-print("")
+ans = (
+    f"\n\nSolution:\n"
+    f"surface temperature of transmission: {T_s:6.2f} centigrades\n\n"
+)
+print(ans)
