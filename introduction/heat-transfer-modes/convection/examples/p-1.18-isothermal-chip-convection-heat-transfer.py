@@ -44,11 +44,8 @@ T_inf = 15.0
 solution (part a):
 generated thermal energy,   Watts,  W
 """
-Eg = h * A * (T_s - T_inf)
+part_a = Eg = h * A * (T_s - T_inf)
 
-print("")
-print("Answers:")
-print("max allowed chip power with air as coolant: %e W" %(Eg))
 """
 convection heat transfer coefficient for the dielectric fluid, W / m^2 K
 """
@@ -57,6 +54,13 @@ h = 3000.0
 solution (part b):
 generated thermal energy,   Watts,  W
 """
-Eg = h * A * (T_s - T_inf)
-print("max allowed chip power with the dielectric fluid as coolant: %e W" %(Eg))
-print("")
+part_b = Eg = h * A * (T_s - T_inf)
+
+
+ans = (
+    f"\n\nProblem 1.18 (6th ed): "
+    f"Chip Cooling by Forced Convection\n"
+    f"max power for air-cooled chip:              {part_a:6.2f} W\n"
+    f"max power for dielectric fluid-cooled chip: {part_b:6.2f} W\n\n"
+)
+print(ans)
