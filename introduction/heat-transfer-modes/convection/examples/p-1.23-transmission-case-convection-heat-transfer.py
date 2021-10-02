@@ -25,33 +25,25 @@ References:
 """
 
 """
-length,                     meters,         m
-total surface area (cube),  meters squared, m^2
+Given:
 """
-W = 0.3
-A = 6 * W * W
+W = 0.3             # length,                   m
+P = 150             # power input,              hp
+eta = 0.93          # transmission efficiency,  1
+h = 200             # convection coefficient,   W / (m^2 K)
+T_inf = 30          # ambient temperature,      C
 
 """
-power input,                horsepower,     hp
-transmission efficiency,    dimensionless,  1
-generated thermal energy,   Watts,          W
+Knowledge:
 """
-P   = 150.0
-eta = 0.93
-Eg  = P * (1 - eta) * 0.7457e3; # constant converts hp to W
+A   = 6 * W * W     # surface area (cube),      m^2
+Eg  = P * (1 - eta) # dissipated energy,        hp
+Eg *= 0.7457e3      # hp -> W
 
 """
-heat transfer coefficient,                  W / (m^2 K)
-ambient temperature,        Centigrades,    C
+Solution:
 """
-h     = 200.0
-T_inf = 30.0
-
-"""
-solution:
-transmission temperature, Centigrades, C
-"""
-T_s = Eg / (h * A) + T_inf
+T_s = Eg / (h * A) + T_inf  # transmission temperature, C
 
 ans = (
     f"\n\nProblem 1.23 (6th edition): Forced Convection\n"
