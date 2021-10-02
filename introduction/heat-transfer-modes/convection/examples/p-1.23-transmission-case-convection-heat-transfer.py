@@ -47,7 +47,7 @@ ambient temperature,        Centigrades,    C
 h     = 200.0
 T_inf = 30.0
 
-""" 
+"""
 solution:
 transmission temperature, Centigrades, C
 """
