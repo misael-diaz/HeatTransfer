@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Heat Transfer I                                                 March 16, 2020
+Heat Transfer I                                              March 16, 2020
 ME 3150 SP20
 Prof. M. Diaz-Maldonado
 
@@ -26,36 +26,26 @@ References:
 from numpy import pi
 
 """
-length,   meters,         m
-diameter, meters,         m
-area,     meters squared, m^2
+Given:
 """
-L = 20.0e-3
-D =  0.5e-3
-A = pi * D * L # exposed surface area of wire (cylinder)
+L = 20.0e-3     # wire length,              meters,         m
+D =  0.5e-3     # wire diameter,            meters,         m
+e_R = 5.0       # resistance voltage drop,  Volts,          V
+I   = 0.1       # electric current,         Amperes,        A
+T_s   = 75      # wire surface temperature, Centigrades,    C
+T_inf = 25      # ambient temperature,      Centigrades,    C
 
 """
-resistance voltage drop,  Volts,    V
-electric current,         Amperes,  A
-generated thermal energy, Watts,    W
+Knowledge:
 """
-e_R = 5.0
-I   = 0.1
-Eg = e_R * I
+A = pi * D * L  # wire surface area,        meters squared, m^2
+Eg = e_R * I    # generated thermal energy, Watts,          W
 
 """
-wire surface temperature, Centigrades, C
-ambient temperature,      Centigrades, C
+Solution:
 """
-T_s   = 75.0
-T_inf = 25.0
-
-"""
-convection heat transfer coefficient, W/(m^2 K)
-air speed,                            m/s
-"""
-h = Eg / ( A * (T_s - T_inf) )
-U = 6.25e-5 * h**2
+h = Eg / ( A * (T_s - T_inf) )  # convection coefficient,   W / (m^2 K)
+U = 6.25e-5 * h**2              # air speed,                m / s
 
 ans = (
     f"\n\nProblem 1.17 (6th-edition):\n"
