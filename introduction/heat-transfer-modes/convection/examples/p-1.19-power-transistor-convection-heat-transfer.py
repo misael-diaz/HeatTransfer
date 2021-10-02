@@ -27,28 +27,21 @@ References:
 from numpy import pi
 
 """
-length,           meters,         m
-diameter,         meters,         m
-surface area,     meters squared, m^2
+Given:
 """
-L = 10.0e-3
-D = 12.0e-3
-A = pi * D * L
+L, D = (10.0e-3, 12.0e-3)   # length and diameter, m
+T_s, T_inf = (85, 25)       # surface and ambient temperature, C
+h = 100                     # heat transfer coefficient, W / (m^2 K)
 
 """
-heat transfer coefficient,             W / m^2 K
-surface temperature,      Centigrades, C
-ambient temperature,      Centigrades, C
+Knowledge:
 """
-h     = 100.0
-T_s   = 85.0
-T_inf = 25.0
+A = pi * D * L  # surface area, m^2
 
 """
-solution (part a):
-generated thermal energy, Watts,         W
+Solution:
 """
-Eg = h * A * (T_s - T_inf)
+Eg = h * A * (T_s - T_inf)  # dissipated thermal energy, W
 
 ans = (
     f"\n\nProblem 1.19 (1.27 8th-ed):\n"
