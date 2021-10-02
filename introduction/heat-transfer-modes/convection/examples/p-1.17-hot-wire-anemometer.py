@@ -6,7 +6,7 @@ ME 3150 SP20
 Prof. M. Diaz-Maldonado
 
 Synopsis:
-Problem 1.17. Hot-wire Anemometer, a device which measures the air speed.
+Problem 1.17. Hot-wire Anemometer, an air speed measuring device.
 Physical quantities are expressed in SI Units.
 
 
