@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 """
 Heat Transfer I                                                 March 16, 2020
-ME 3150 SP20  
+ME 3150 SP20
 Prof. M. Diaz-Maldonado
 
 Synopsis:
 Problem 1.17. Hot-wire Anemometer, a device which measures the air speed.
-Incroprera et al. Fundamentals of Heat and Mass Transfer, 6th edition. 
+Incroprera et al. Fundamentals of Heat and Mass Transfer, 6th edition.
 Physical quantities are expressed in SI Units.
 """
 
@@ -28,7 +28,7 @@ electric current,         Amperes,  A
 generated thermal energy, Watts,    W
 """
 e_R = 5.0
-I   = 0.1 
+I   = 0.1
 Eg = e_R * I
 
 """
@@ -38,7 +38,7 @@ ambient temperature,      Centigrades, C
 T_s   = 75.0
 T_inf = 25.0
 
-""" 
+"""
 convection heat transfer coefficient, W/(m^2 K)
 air speed,                            m/s
 """
