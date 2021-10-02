@@ -6,7 +6,7 @@ ME 3150 SP20
 Prof. M. Diaz-Maldonado
 
 Synopsis:
-Problem 1.17. Hot-wire Anemometer, an air speed measuring device.
+Problem 1.17 (6th ed). Hot-wire Anemometer, an air speed measuring device.
 Physical quantities are expressed in SI Units.
 
 
@@ -57,8 +57,11 @@ air speed,                            m/s
 h = Eg / ( A * (T_s - T_inf) )
 U = 6.25e-5 * h**2
 
-print("")
-print("Answers:")
-print("convection heat transfer coefficient: %e W/(m^2 K)" %(h))
-print("air speed:                            %e m/s" %(U))
-print("")
+ans = (
+    f"\n\nProblem 1.17 (6th-edition):\n"
+    f"Hot-wire anemometer (an air speed measuring apparatus)\n"
+    f"convection heat transfer coefficient: {h:8.2f} W/(m^2 K)\n"
+    f"air speed:                            {U:8.2f} m/s\n\n"
+)
+
+print(ans)
