@@ -1,13 +1,14 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Heat Transfer I                                                 July 21, 2020
-ME 3150 FA20  
+Heat Transfer I                                               July 21, 2020
+ME 3150 FA20
 Prof. M. Diaz-Maldonado
 
 Synopsis:
 Problem 1.28. Heat removal from a steam pipe by convection.
 
-Incroprera et al. Fundamentals of Heat and Mass Transfer, 7th edition. 
+Incroprera et al. Fundamentals of Heat and Mass Transfer, 7th edition.
 Physical quantities are expressed in SI Units.
 """
 
@@ -15,27 +16,20 @@ import math
 pi = math.pi
 
 """
-length,           meters,         m
-diameter,         meters,         m
-surface area,     meters squared, m^2
+Given:
 """
-L = 25.0
-D = 0.1
-A = pi * D * L 
+L = 25                      # length,       m
+D = 0.1                     # diameter,     m
+A = pi * D * L              # surface area, m^2
 
-"""
-heat transfer coefficient,        W / m^2 K
-surface temperature,      Kelvin, K
-ambient temperature,      Kelvin, K
-"""
-h     = 45.0
-T_s   = 150.0 + 273.15
-T_inf = 25.0  + 273.15
+h     = 45                  # heat transfer coefficient,    W / (m^2 K)
+T_s   = 150 + 273.15        # surface temperature,          K
+T_inf = 25  + 273.15        # ambient temperature,          K
+
 """ 
 Solution:
-rate of heat transfer, Watts,         W
 """
-q = h * A * (T_s - T_inf)
+q = h * A * (T_s - T_inf)   # rate of heat transfer,    W
 
 print("")
 print("Answers:")
