@@ -29,7 +29,7 @@ from numpy import array
 """
 Given:
 """
-W = 5.0e-3  # squared chip length,  m
+L = 5.0e-3  # squared chip length,  m
 T_s   = 85  # surface temperature,  C
 T_inf = 15  # ambient temperature,  C
 
@@ -39,7 +39,7 @@ h = array([200, 3000]) # W / m^2 K
 """
 Knowledge:
 """
-A = W * W   # chip's surface area,  m^2
+A = L * L   # chip's surface area,  m^2
 
 """
 Solution (parts a and b):
