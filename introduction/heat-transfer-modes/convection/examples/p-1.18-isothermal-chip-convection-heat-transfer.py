@@ -8,9 +8,20 @@ Prof. M. Diaz-Maldonado
 Synopsis:
 Problem 1.18 (1.26 8th edition).
 Heat removal from an isothermal chip by forced convection.
-
-Incroprera et al. Fundamentals of Heat and Mass Transfer, 8th edition.
 Physical quantities are expressed in SI Units.
+
+
+Copyright (c) 2021 Misael Diaz-Maldonado
+This file is released under the GNU General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+
+References:
+[0] R Johansson, Numerical Python: Scientific Computing and Data
+    Science Applications with NumPy, SciPy, and Matplotlib, 2nd edition
+[1] TL Bergman, AS Lavine, FP Incropera, DP DeWitt, Fundamentals of Heat
+    and Mass Transfer, 8th edition.
 """
 
 """
