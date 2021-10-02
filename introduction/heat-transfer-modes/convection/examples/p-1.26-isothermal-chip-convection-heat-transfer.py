@@ -1,13 +1,15 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Heat Transfer I                                                 March 23, 2020
-ME 3150 SP20  
+ME 3150 SP20
 Prof. M. Diaz-Maldonado
 
 Synopsis:
-Problem 1.26. Heat removal from an isothermal chip by forced convection.
+Problem 1.18 (1.26 8th edition).
+Heat removal from an isothermal chip by forced convection.
 
-Incroprera et al. Fundamentals of Heat and Mass Transfer, 7th edition. 
+Incroprera et al. Fundamentals of Heat and Mass Transfer, 8th edition.
 Physical quantities are expressed in SI Units.
 """
 
