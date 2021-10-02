@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Heat Transfer I                                              March 23, 2020
-ME 3150 SP20  
+ME 3150 SP20
 Prof. M. Diaz-Maldonado
 
 Synopsis:
@@ -44,7 +44,7 @@ h     = 100.0
 T_s   = 85.0
 T_inf = 25.0
 
-""" 
+"""
 solution (part a):
 generated thermal energy, Watts,         W
 """
