@@ -12,8 +12,7 @@ Incroprera et al. Fundamentals of Heat and Mass Transfer, 7th edition.
 Physical quantities are expressed in SI Units.
 """
 
-import math
-pi = math.pi
+from numpy import pi
 
 """
 Given:
