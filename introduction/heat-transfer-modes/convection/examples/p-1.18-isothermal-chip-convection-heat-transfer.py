@@ -24,38 +24,27 @@ References:
     and Mass Transfer, 8th edition.
 """
 
-"""
-length,         meters,         m
-surface area,   meters squared, m^2
-"""
-W = 5.0e-3
-A = W * W
+from numpy import array
 
 """
-heat transfer coefficient,                  W / m^2 K
-surface temperature,        Centigrades,    C
-ambient temperature,        Centigrades,    C
+Given:
 """
-h     = 200.0
-T_s   = 85.0
-T_inf = 15.0
+W = 5.0e-3  # squared chip length,  m
+T_s   = 85  # surface temperature,  C
+T_inf = 15  # ambient temperature,  C
+
+""" heat transfer coeffs of air and dielectric fluid, respectively """
+h = array([200, 3000]) # W / m^2 K
 
 """
-solution (part a):
-generated thermal energy,   Watts,  W
+Knowledge:
 """
-part_a = Eg = h * A * (T_s - T_inf)
+A = W * W   # chip's surface area,  m^2
 
 """
-convection heat transfer coefficient for the dielectric fluid, W / m^2 K
+Solution (parts a and b):
 """
-h = 3000.0
-"""
-solution (part b):
-generated thermal energy,   Watts,  W
-"""
-part_b = Eg = h * A * (T_s - T_inf)
-
+Eg = part_a, part_b = h * A * (T_s - T_inf) # dissipated thermal energy, W
 
 ans = (
     f"\n\nProblem 1.18 (6th ed): "
