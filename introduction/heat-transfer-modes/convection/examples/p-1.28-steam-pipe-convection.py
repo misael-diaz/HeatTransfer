@@ -31,7 +31,9 @@ Solution:
 """
 q = h * A * (T_s - T_inf)   # rate of heat transfer,    W
 
-print("")
-print("Answers:")
-print("rate of heat loss: %6.2f kW" %(1e-3 * q))
-print("")
+ans = (
+    f"\n\nProblem 1.28: "
+    f"Heat Transfer from a Steam Pipe by Forced Convection\n"
+    f"rate of heat loss: %{(1e-3 * q):6.2f} kW\n\n"
+)
+print(ans)
