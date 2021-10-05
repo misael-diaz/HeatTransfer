@@ -1,35 +1,31 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Heat Transfer I                                                 March 23, 2020
+Heat Transfer I                                              March 23, 2020
 ME 3150 SP20  
 Prof. M. Diaz-Maldonado
 
 Synopsis:
-Problem 1.27. Heat removal from a temperature controller by forced convection.
+Problem 1.27.
+Heat removal from a temperature controller by forced convection.
 
 Incroprera et al. Fundamentals of Heat and Mass Transfer, 7th edition. 
 Physical quantities are expressed in SI Units.
 """
 
 """
-surface area,     meters squared, m^2
+Given:
 """
-A = 30.0e-6
+A = 30.0e-6     # surface area, m^2
+
+h     = 25.0    # heat transfer coefficient, W / (m^2 * K)
+T_s   = 70.0    # surface temperature, C
+T_inf = 50.0    # ambient temperature, C
 
 """
-heat transfer coefficient,             W / m^2 K
-surface temperature,      Centigrades, C
-ambient temperature,      Centigrades, C
+Solution:
 """
-h     = 25.0
-T_s   = 70.0
-T_inf = 50.0
-
-""" 
-solution (part a):
-generated thermal energy, Watts,         W
-"""
-Eg = h * A * (T_s - T_inf) 
+Eg = h * A * (T_s - T_inf)  # dissipated thermal energy, W
 
 print("")
 print("Answers:")
