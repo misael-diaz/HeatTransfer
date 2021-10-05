@@ -37,7 +37,8 @@ Solution:
 """
 Eg = h * A * (T_s - T_inf)  # dissipated thermal energy, W
 
-print("")
-print("Answers:")
-print("max power: %e W" %(Eg))
-print("")
+ans = (
+    f"\n\nProblem 1.27: Temperature Controller\n"
+    f"max power: {Eg:12.4e} W\n\n"
+)
+print(ans)
