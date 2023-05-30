@@ -28,18 +28,18 @@ from numpy import pi
 """
 Given:
 """
-L = 20.0e-3     # wire length,              meters,         m
-D =  0.5e-3     # wire diameter,            meters,         m
-e_R = 5.0       # resistance voltage drop,  Volts,          V
-I   = 0.1       # electric current,         Amperes,        A
-T_s   = 75      # wire surface temperature, Centigrades,    C
-T_inf = 25      # ambient temperature,      Centigrades,    C
+L = 20.0e-3                     # wire length,              meters,         m
+D =  0.5e-3                     # wire diameter,            meters,         m
+e_R = 5.0                       # resistance voltage drop,  Volts,          V
+I   = 0.1                       # electric current,         Amperes,        A
+T_s   = 75                      # wire surface temperature, Centigrades,    C
+T_inf = 25                      # ambient temperature,      Centigrades,    C
 
 """
 Knowledge:
 """
-A = pi * D * L  # wire surface area,        meters squared, m^2
-Eg = e_R * I    # generated thermal energy, Watts,          W
+A = pi * D * L                  # wire surface area,        meters squared, m^2
+Eg = e_R * I                    # generated thermal energy, Watts,          W
 
 """
 Solution:
