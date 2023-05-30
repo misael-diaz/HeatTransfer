@@ -29,9 +29,9 @@ from numpy import array
 """
 Given:
 """
-L = 5.0e-3  # squared chip length,  m
-T_s   = 85  # surface temperature,  C
-T_inf = 15  # ambient temperature,  C
+L = 5.0e-3                                          # squared chip length,  m
+T_s   = 85                                          # surface temperature,  C
+T_inf = 15                                          # ambient temperature,  C
 
 """ heat transfer coeffs of air and dielectric fluid, respectively """
 h = array([200, 3000]) # W / m^2 K
@@ -39,12 +39,12 @@ h = array([200, 3000]) # W / m^2 K
 """
 Knowledge:
 """
-A = L * L   # chip's surface area,  m^2
+A = L * L                                           # chip's surface area,  m^2
 
 """
 Solution (parts a and b):
 """
-Eg = part_a, part_b = h * A * (T_s - T_inf) # dissipated thermal energy, W
+Eg = part_a, part_b = h * A * (T_s - T_inf)         # dissipated thermal energy, W
 
 ans = (
     f"\n\nProblem 1.18 (6th ed): "

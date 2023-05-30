@@ -27,18 +27,18 @@ References:
 """
 Given:
 """
-L = 0.3             # length,                   m
-P = 150             # power input,              hp
-eta = 0.93          # transmission efficiency,  1
-h = 200             # convection coefficient,   W / (m^2 K)
-T_inf = 30          # ambient temperature,      C
+L = 0.3                     # length,                   m
+P = 150                     # power input,              hp
+eta = 0.93                  # transmission efficiency,  1
+h = 200                     # convection coefficient,   W / (m^2 K)
+T_inf = 30                  # ambient temperature,      C
 
 """
 Knowledge:
 """
-A   = 6 * L * L     # surface area (cube),      m^2
-Eg  = P * (1 - eta) # dissipated energy,        hp
-Eg *= 0.7457e3      # hp -> W
+A   = 6 * L * L             # surface area (cube),      m^2
+Eg  = P * (1 - eta)         # dissipated energy,        hp
+Eg *= 0.7457e3              # hp -> W
 
 """
 Solution:
