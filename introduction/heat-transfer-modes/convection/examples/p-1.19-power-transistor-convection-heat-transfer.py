@@ -36,7 +36,7 @@ h = 100                     # heat transfer coefficient, W / (m^2 K)
 """
 Knowledge:
 """
-A = pi * D * L  # surface area, m^2
+A = pi * D * L              # surface area, m^2
 
 """
 Solution:
