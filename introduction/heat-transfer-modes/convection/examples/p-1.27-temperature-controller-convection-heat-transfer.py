@@ -26,11 +26,11 @@ References:
 """
 Given:
 """
-A = 30.0e-6     # surface area, m^2
+A = 30.0e-6                 # surface area, m^2
 
-h     = 25.0    # heat transfer coefficient, W / (m^2 * K)
-T_s   = 70.0    # surface temperature, C
-T_inf = 50.0    # ambient temperature, C
+h     = 25.0                # heat transfer coefficient, W / (m^2 * K)
+T_s   = 70.0                # surface temperature, C
+T_inf = 50.0                # ambient temperature, C
 
 """
 Solution:
